@@ -1,0 +1,67 @@
+import React from "react";
+// import ApexChart from "./ApexChart";
+import LOGO_SOLANA from './img/solana-sol-logo.png';
+import Vector from './img/Vector.png';
+import ReactApexChart from 'react-apexcharts'
+import './App.css';
+import Data from './img/data.json'
+
+export default class ApexChart extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      series: [{
+        data: Data
+      }],
+      options: {
+        chart: {
+          type: 'candlestick',
+          height: 350
+        },
+        title: {
+          text: 'My chart',
+          align: 'left'
+        },
+        xaxis: {
+          type: 'datetime'
+        },
+        yaxis: {
+          tooltip: {
+            enabled: true
+          }
+        }
+      },
+    
+    
+    };
+  }
+  render() {
+    return (
+      <div className='page_graph_maicomponent'>
+        <div className="page_graph_coin_name">
+          <div className="page_graph_coin_name_1"><img src={LOGO_SOLANA}></img></div>
+          <div className="page_graph_coin_name_2"><span>SOL / USDC</span></div>
+          <div className="page_graph_coin_name_3"><img src={Vector}></img></div>
+        </div>
+        <div className="page_graph_title">
+          <div className="page_graph_title_1">Index Price</div>
+          <div className="page_graph_title_2">Mark Price</div>
+          <div className="page_graph_title_3">Predicted Funding Rate</div>
+        </div>
+        <div className="page_graph_title2">
+          <div className="page_graph_title2_1">$32.40</div>
+          <div className="page_graph_title2_2">$32.45</div>
+          <div className="page_graph_title2_3">0.006% in 10 min</div>
+        </div>
+        <div className="page_graph_main_graph">
+        <div id="chart">
+                <ReactApexChart options={this.state.options} series={this.state.series} type="candlestick" height={350} />
+              </div>
+              <div id="html-dist"></div>
+        </div>
+        
+      </div>
+    );
+  }
+}

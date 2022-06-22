@@ -1,0 +1,153 @@
+.page_graph_maicomponent{
+
+    position: absolute;
+    top:11.71%;
+    left:5.31%;
+    background: #161A33;
+  border-radius: 12px;
+    width: 89.38%;
+    height: 71.29%;
+
+}
+
+.page_graph_coin_name{
+  position: relative;
+  left: 5%;
+  width: 90%;
+height: 6.25%;
+
+top: 3.28%;
+
+background: #252A4D;
+border-radius: 12px;
+display: flex;
+flex-direction: row;
+align-items: center;
+/* justify-content: center; */
+/* text-align: center; */
+  
+}
+
+.page_graph_coin_name_1{
+  position: relative;
+  left: 5%;
+  top: 5%;
+  width: 10%;
+  height: 80%;
+
+}
+.page_graph_coin_name_1 img{
+  position: relative;
+  width: 80%;
+  height: 100%;
+}
+.page_graph_coin_name_2{
+  position: relative;
+  left: 7%;
+  top: 5%;
+  width: 70%;
+  height: 80%;
+}
+.page_graph_coin_name_2{
+  position: relative;
+  top: 28%;
+  
+  height: 100%;
+  font-family: 'Gilroy-Medium';
+font-size: 16px;
+line-height: 19px;
+/* identical to box height */
+
+
+color: #FFFFFF;
+}
+
+
+
+.page_graph_coin_name_3{
+  position: relative;
+  left: 5%;
+  top: 5%;
+  width: 10%;
+  height: 80%;
+
+}
+
+.page_graph_coin_name_3 img{
+  position: relative;
+  left: 5%;
+  width: 33%;
+  height: 21%;
+}
+
+.page_graph_title{
+  position: relative;
+  top: 6.28%;
+  left: 5%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-family: 'Gilroy-Medium';
+font-size: 0.8rem;
+line-height: 21px;
+/* identical to box height, or 177% */
+
+
+color: #B9C1D9;
+}
+.page_graph_title_1{
+  flex: 1;
+
+}
+.page_graph_title_2{
+  flex: 1;
+  
+}
+.page_graph_title_3{
+  flex: 3;
+  
+}
+.page_graph_title div{
+  margin-left: 2%;
+}
+
+.page_graph_title2{
+  position: relative;
+  top: 6.28%;
+  left: 5%;
+  display: flex;
+  flex-direction: row;
+  font-family: 'Lato';
+font-style: normal;
+font-weight: 700;
+font-size: 0.9rem;
+line-height: 21px;
+color: #FFFFFF;
+justify-content: space-between;
+}
+
+.page_graph_title2 div{
+  margin-left: 2%;
+}
+
+.page_graph_title2_1{
+  flex: 1;
+
+}
+.page_graph_title2_2{
+  flex: 1;
+  
+}
+.page_graph_title2_3{
+  flex: 3;
+  
+}
+
+.page_graph_main_graph{
+  position: relative;
+  top: 10.28%;
+  width: 100%;
+  height: 10%;
+  left: 0%;
+}
